@@ -18,7 +18,7 @@
                     float: left;
                     margin-right: 5px;
                     a {
-                        color: $body-color;
+                        color: #444;
                         padding: 5px 15px;
                         line-height: 32px;
                         display: block;
@@ -30,12 +30,34 @@
                             @extend .fas;
                             content: fa-content($fa-var-angle-down);
                             padding-left: 7px;
+                            opacity: .5;
                         }
                         & .active {
                             color: #f91942;
                         }
                     }
                 }
+            }
+        }
+    }
+    .right-side {
+        float: right;
+        #sign-in {
+            float: left;
+            padding: 5px 15px;
+            line-height: 32px;
+            margin-right: 10px;
+            i {
+                margin-right: 7px;
+            }
+        }
+        #add-listing {
+            float: right;
+            border-radius: 40px;
+            padding: 10px 20px;
+            font-weight: 600;
+            i {
+                margin-left: 5px;
             }
         }
     }
