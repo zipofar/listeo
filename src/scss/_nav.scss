@@ -1,0 +1,47 @@
+#header {
+    padding: 18px 0px 8px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,.12);
+    .left-side {
+        float: left;
+        #logo {
+            float: left;
+            img {
+                max-height: 38px;
+                width: auto;
+            }
+        }
+        #navigation {
+            float: left;
+            ul {
+                list-style: none;
+                li {
+                    float: left;
+                    margin-right: 5px;
+                    a {
+                        color: $body-color;
+                        padding: 5px 15px;
+                        line-height: 32px;
+                        display: block;
+                        &:hover {
+                            text-decoration: none;
+                        }
+                        &:after {
+                            @extend %fa-icon;
+                            @extend .fas;
+                            content: fa-content($fa-var-angle-down);
+                            padding-left: 7px;
+                        }
+                        & .active {
+                            color: #f91942;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .container:after {
+        content: " ";
+        clear: both;
+        display: block;
+    }
+}
