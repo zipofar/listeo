@@ -1,6 +1,9 @@
 div(id='header')
     div(class='container')
         div(class="left-side")
+            div(class="hamburger")
+                button(type="button")
+                    span(class="lines-hamburger")
             div(id="logo")
                 a(href="/index")
                     img(src="/img/assets/logo.png")
@@ -12,6 +15,5 @@ div(id='header')
                     li <a href="#">Pages</a>
         div(class="right-side")
             div(id="sign-in")
-                i(class="fas fa-sign-in-alt")
-                a Sign In
+                a(href="#") <i class="fas fa-sign-in-alt"></i> Sign In
             button(id="add-listing" type="button" class="btn btn-outline-danger") Add Listing <i class="fas fa-plus-circle"></i>
