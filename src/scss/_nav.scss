@@ -109,6 +109,7 @@
         li {
             display: inline-block;
             margin-right: 15px;
+            position: relative;
             a {
                 color: #444;
                 padding: 5px 15px 5px 15px;
@@ -140,6 +141,11 @@
     transform: translateY(0);
 }
 
+#responsive li:hover > a::after {
+    transform: translateX(3px);
+    color: black;
+}
+
 #responsive li ul {
     display: block;
     visibility: hidden;
@@ -157,9 +163,21 @@
         a {
             padding: 7px 85px 7px 15px;
             line-height: 24px;
+            white-space: nowrap;
             &:after {
-                content: "";
+                content: fa-content($fa-var-angle-right);
+                position: absolute;
+                top: 11px;
+                right: 25px;
+                transition: all .25s;
             }
+            &:only-child:after {
+                content: '';
+            }
+        }
+        ul {
+            top: 10px;
+            left: 85%;
         }
     }
 }
