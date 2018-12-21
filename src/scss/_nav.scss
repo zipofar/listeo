@@ -141,7 +141,7 @@
     transform: translateY(0);
 }
 
-#responsive li:hover > a::after {
+#responsive li ul li:hover > a::after {
     transform: translateX(3px);
     color: black;
 }
