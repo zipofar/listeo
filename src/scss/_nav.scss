@@ -165,7 +165,7 @@
     opacity: 0;
     box-shadow: 0 0 10px 0 rgba(0,0,0,.12);
     position: absolute;
-    background-color: lightgray;
+    background-color: white;
     margin: 0px 0 0 10px;
     border-radius: 5px;
     transform: translateY(10px);
@@ -177,6 +177,7 @@
             padding: 7px 85px 7px 15px;
             line-height: 24px;
             white-space: nowrap;
+            opacity: .8;
             &:after {
                 content: fa-content($fa-var-angle-right);
                 position: absolute;
@@ -224,30 +225,42 @@
 
 #responsive .mega-menu {
     position: absolute;
-    left: -100px;
+    left: -200px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.12);
+    background-color: white;
     padding: 20px 0px;
     display: flex;
     justify-content: space-evenly;
-    //visibility: hidden;
-    //opacity: 0;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all .25s;
     .mega-menu-section {
-        border-right: 1px solid gray;
+        border-right: 1px solid $gray-400;
         &:last-child {
             border-right: none;
+        }
+        p {
+            font-weight: 800;
         }
         ul {
             visibility: visible;
             opacity: 1;
             position: relative;
             box-shadow: none;
-            background-color: white;
+            background: none;
             transition: unset;
             transform: unset;
             margin: 0;
             li {
+                i {
+                    position: absolute;
+                    top: 7px;
+                    left: 0px;
+                    font-size: 85%;
+                }
                 a {
-                    padding: 2px 65px 2px 15px;
+                    padding: 2px 65px 2px 20px;
                     &:hover {
                         color: $gray-900;
                     }
