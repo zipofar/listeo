@@ -7,3 +7,19 @@
 @import "./node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
 @import "nav";
 @import "_main-search-container";
+@import "_pop-categories-container";
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: lighter;
+    color: $gray-900;
+}
+h3 {
+    font-size: 2rem;
+    font-weight: lighter;
+    color: $gray-900;
+}
+h4 {
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
