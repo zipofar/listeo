@@ -1,5 +1,12 @@
 $font-family-main:          raleway, helveticaneue, "helvetica neue", Helvetica, Arial, sans-serif;
 $font-family-base:          $font-family-main;
-$fa-font-path:              "/fonts/webfonts";
+$fa-font-path:              "/fonts/webfonts/";
+
+$slick-font-path:           "/fonts/slick/";
+$slick-loader-path:         "/img/slick/";
+$slick-dot-character: "\2022";
+$slick-dot-size: 16px;
+$slick-dot-color: #444;
+$slick-dot-color-active: $slick-dot-color;
 
 $body-color:                #707070;

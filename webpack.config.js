@@ -13,7 +13,7 @@ module.exports = {
     context: path.resolve(__dirname, 'src'),
     entry: {
         app: [
-            //'./js/app.js',
+            './js/app.js',
             './scss/style.scss'
         ],
     },
@@ -36,7 +36,13 @@ module.exports = {
         new CopyWebpackPlugin(
             [
                 { from: './img', to: 'img' },
-                { from: './fonts', to: 'fonts' }
+                //{ from: './fonts', to: 'fonts' },
+                //Font Awesome dependinces
+                { from: '../node_modules/@fortawesome/fontawesome-free/webfonts', to: 'fonts/webfonts' },
+                //Slick dependinces
+                { from: '../node_modules/slick-carousel/slick/slick.min.js', to: 'js' },
+                { from: '../node_modules/slick-carousel/slick/fonts', to: 'fonts/slick' },
+                { from: '../node_modules/slick-carousel/slick/ajax-loader.gif', to: 'img/slick' }
 
             ],
             {
