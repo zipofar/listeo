@@ -4,9 +4,18 @@ $fa-font-path:              "/fonts/webfonts/";
 
 $slick-font-path:           "/fonts/slick/";
 $slick-loader-path:         "/img/slick/";
-$slick-dot-character: "\2022";
-$slick-dot-size: 16px;
-$slick-dot-color: #444;
-$slick-dot-color-active: $slick-dot-color;
+$slick-dot-character:       "\2022";
+$slick-dot-size:            16px;
+$slick-dot-color:           #444;
+$slick-dot-color-active:    $slick-dot-color;
 
 $body-color:                #707070;
+
+$rating-star-full-color:    #ffc600;
+$rating-star-empty-color:   #ddd;
+$height-star-block:         65;
+
+$height-most-visited-container: 320;
+$border-most-visited-container: 4;
+
+$padding-carousel-item:     10;

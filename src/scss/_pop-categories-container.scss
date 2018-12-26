@@ -1,25 +1,25 @@
 .pop-categories-container {
     background-color: white;
-    height: 600px;
+    height: 700px;
     width: 100%;
     position: relative;
     .pop-categories-inner {
         position: absolute;
         width: 100%;
         top: 15%;
-        .slick-carousel {
+        .slick-carousel-pop-categories {
             margin-top: 50px;
             .carousel-item {
                 height: 320px;
                 overflow: hidden;
                 margin: 0 20px;
                 transition: all .2s;
+                border-radius: 5px;
                 .carousel-item-link {
                     height: 100%;
                     width: 100%;
                     position: relative;
                     display: block;
-                    border-radius: 5px;
                     &:before {
                         content: "";
                         width: 100%;
@@ -59,16 +59,6 @@
                             color: white;
                             font-size: 1.2em;
                             opacity: .7;
-                        }
-                        span {
-                            border-radius: 25px;
-                            background: none;
-                            border: solid 1px white;
-                            padding: 10px 30px;
-                            &:hover {
-                                background-color: $red;
-                                border-color: $red;
-                            }
                         }
                     }
                 }

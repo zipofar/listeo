@@ -12,7 +12,7 @@ $('.slick-carousel').on('init', function (event, slick, direction) {
 });
 
 $(document).ready(function(){
-    $('.slick-carousel').slick({
+    $('.slick-carousel-pop-categories').slick({
         focusOnSelect: true,
         infinite: true,
         arrows: false,
@@ -33,6 +33,40 @@ $(document).ready(function(){
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
+                    centerMode: false,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: false,
+                }
+            }
+        ]
+    });
+
+    $('.slick-carousel-most-visited').slick({
+        focusOnSelect: true,
+        infinite: true,
+        arrows: false,
+        dots: true,
+        infinite: true,
+        responsive: [
+            {
+                breakpoint: 4000,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    centerMode: false,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
                     centerMode: false,
                 }
             },
